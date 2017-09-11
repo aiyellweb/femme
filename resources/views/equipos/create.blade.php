@@ -28,7 +28,7 @@
 
   <div class="row">
 	<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-		<h3>Listado equipos<a href="{{Route('usuarios.index')}}"><button class="btn btn-success glyphicon glyphicon-plus "> ver.
+		<h3>Listado equipos<a href="{{Route('equipos.index')}}"><button class="btn btn-success glyphicon glyphicon-plus "> ver.
 
 
 	</div>

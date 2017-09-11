@@ -20,20 +20,20 @@
 			<table id="eps_table" class="table table-striped table-bordered table-condensed table-hover">
 				<thead>
 					<th>codigo</th>
-					<th>nombre</th>
-					<th>Segundo Nombre</th>
-					<th>Email</th>
-					<th>Estado</th>
+					<th>Categoria</th>
+					<th>Nombre-equipo</th>
+					<th>Sistema</th>
+					<th>Modelo</th>
                     <th>Acciones</th>
 				</thead>
 
         @foreach($equipo as $key)      
   			<tr class="info">
-		            <td>{{$key->id}}</td>
-		            <td>{{$key->id}}</td>
-		            <td>{{$key->id}}</td> 
-					<td>{{$key->id}}</td>
-					<td>{{$key->id}}</td>
+		            <td> <a href="{{route('equipos.show',$key->id)}}">{{$key->id}}</td>
+		            <td>{{$key->Tipo_equipo->nombre_equipo}}</td>
+		            <td>{{$key->nombre_equipo}}</td> 
+					<td>{{$key->sistema}}</td>
+					<td>{{$key->modelo_equipo}}</td>
 					<td>
       	<a href="" data-target="#modal-update-{{$key->id}}" data-toggle="modal" ><button  class="btn-warning  glyphicon glyphicon-wrench"></button></a>
         @include('usuarios.modalEdit')      	
